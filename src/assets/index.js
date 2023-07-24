@@ -25,17 +25,28 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import nnpc from "./company/nnpc.png";
+import futo from "./company/futo.png";
+import divinemercy from "./company/divinemercy.png";
+import virtualaccess from "./company/virtualaccess.jpg";
+import motivalogic from "./company/motivalogic.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import devops from "./devops.png";
+import networking from "./networking.png"
+import monitoring from "./monitoring.png"
+import fullstack from "./webdev.png";
 
 export {
   logo,
+  fullstack,
   backend,
   creator,
   mobile,
   web,
+  devops,
   github,
   menu,
   close,
@@ -59,4 +70,11 @@ export {
   carrent,
   jobit,
   tripguide,
+  nnpc,
+  futo,
+  divinemercy,
+  virtualaccess,
+  motivalogic,
+  monitoring, 
+  networking,
 };
