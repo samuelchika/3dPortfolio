@@ -38,6 +38,7 @@ import devops from "./devops.png";
 import networking from "./networking.png"
 import monitoring from "./monitoring.png"
 import fullstack from "./webdev.png";
+import westermo from "./westermo.jpeg"
 
 export {
   logo,
@@ -77,4 +78,5 @@ export {
   motivalogic,
   monitoring, 
   networking,
+  westermo,
 };
