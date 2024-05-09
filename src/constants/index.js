@@ -69,7 +69,7 @@ const services = [
     icon: networking,
   },
   {
-    title: "Monitoring",
+    title: "Monitoring & Automation",
     icon: monitoring,
   },
 ];

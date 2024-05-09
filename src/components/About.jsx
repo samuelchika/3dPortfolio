@@ -67,14 +67,36 @@ const About = () => {
 
         <motion.p 
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-4 text-secondary text-[17px] max-w-7xl leading-[30px] text-justify"
+          className="mt-4 text-secondary text-[17px] max-w-7xl leading-[30px] text-justify whitespace-pre-line"
         >
-          Highly skilled DevOps Engineer with a proven track record of designing, implementing, and managing robust, scalable, and automated infrastructure solutions. Possessing a deep understanding of the software development lifecycle through my Full Stack Developer experience, I excel at bridging the gap between development and operations teams, ensuring seamless collaboration and accelerated deployment cycles with my expertise in various programming languages, frameworks and database. Proficient in cloud technologies, containerization, and configuration management tools. I am dedicated to optimizing continuous integration and delivery pipelines. With my Cyber Security certificate I have a strong focus on security, reliability, and performance to promote trust with clients. I am committed to enhancing the overall efficiency and effectiveness of software development processes with my love for innovation and automation. My proficiency in agile methodologies and collaborative team environments enables me to contribute effectively throughout the software development lifecycle. By staying current with the latest industry trends, I strive to leverage emerging technologies to drive continuous improvement and create impactful DevOps solutions.
+          A versatile and dedicated professional with a diverse technical background encompassing Node.js Full Stack Development, Zabbix Monitoring, DevOps practices, Network Engineering, and Automation Engineering. 
+          <ul className="list-disc ml-6 my-2">
+            <li>
+            <span className='font-bold text-[18px] underline'>Node.js Full Stack Development</span>: Proficient in building scalable web applications (cloud / on-premises) using Node.js, Express.js, and popular front-end frameworks like React.js and Next.js, collaborating with UI/UX engineers on Figma. Experienced in working with SQL and NoSQL databases such as MySQL, MongoDB and PostgreSQL, and implementing RESTful APIs and microservices and deployment on cloud and shared domain considering security with OWASP recommendation.
+            </li>
+
+            <li>
+            <span className='font-bold text-[18px] underline'>Zabbix Professional</span>: Expert in deploying and managing Zabbix monitoring solutions for large-scale IT environments. Skilled in configuring Zabbix proxies, creating custom templates, and setting up advanced visualizations and alerting systems.
+            </li>
+
+            <li>
+            <span className='font-bold text-[18px] underline'>DevOps Engineer</span>: Strong experience in implementing CI/CD process using tools like Jenkins, GitLab CI / Workflow, and Travis CI. Proficient in containerization and orchestration technologies like Docker and Kubernetes, monitoring deployements using Zabbix and New Relic and infrastructure as code (IaC) tools such as Terraform and Ansible with cloud provider - AWS.
+            </li>
+
+            <li>
+            <span className='font-bold text-[18px] underline'>Network Engineer</span>: Solid understanding of network protocols, LAN/WAN, TCP/IP, and VPN/Firewall configuration. Experienced in troubleshooting network issues, configuring routers and switches, and managing network security measures.
+            </li>
+            <li>
+            <span className='font-bold text-[18px] underline'>Automation Engineer</span>: Proficient in automating repetitive tasks and processes to improve efficiency and reliability. Experienced in scripting languages like Bash, and automation tools like Jenkins and Ansible.
+            </li>
+          </ul>
+
+          Throughout my career, I have demonstrated the ability to learn new technologies quickly, work collaboratively in team settings, and lead projects to successful completion. I am passionate about leveraging technology to solve complex problems and drive business success.
+
         </motion.p>
 
         <div className="mt-4 w-full flex flex-wrap gap-4">
           <h2 className='text-white text-[28px] font-bold block w-full'>Skills</h2>
-
             { skills.map((skill, index) => (
               <SkillsCard key={index} skill={skill} />
             ))}
