@@ -29,16 +29,20 @@ import {
   monitoring,
   networking,
   fullstack,
-  westermo 
+  westermo, 
+  kenny,
+  amasa,
+  avatar
 } from "../assets";
 
 import {
-  SiStyledcomponents, SiTailwindcss, SiReact, SiTypescript, SiPhp, SiNodedotjs, SiMysql, SiMongodb, SiRedis, SiFirebase, SiKubernetes, SiAnsible, SiTerraform, SiNewrelic, SiPowershell, SiDigitalocean, SiMicrosoftteams, SiGooglemeet, SiTeamviewer, SiAnydesk, SiSlack, SiMicrosoftonenote,SiNotion,SiWikipedia, SiReadthedocs, SiFramer, SiHeroku, SiNamecheap, SiPassport, SiBootstrap, SiJavascript, SiHtml5, SiCss3, SiExpress, SiDocker
+   SiTailwindcss, SiReact, SiTypescript, SiPhp, SiNodedotjs, SiMysql, SiMongodb, SiRedis, SiFirebase, SiKubernetes, SiAnsible, SiTerraform, SiNewrelic, SiPowershell, SiDigitalocean, SiMicrosoftteams, SiGooglemeet, SiTeamviewer, SiAnydesk, SiSlack, SiMicrosoftonenote,SiNotion,SiWikipedia, SiReadthedocs, SiFramer, SiHeroku, SiNamecheap, SiPassport, SiBootstrap, SiJavascript, SiHtml5, SiCss3, SiExpress, SiDocker
 } from 'react-icons/si';
 import { FaJava, FaDatabase, FaLaptopCode, FaCode, FaDocker, FaGitAlt, FaJenkins, FaFileCode, FaPython, FaCloud, FaAws, FaUsers, FaConfluence, FaBootstrap, FaNodeJs, FaJira, FaDiscord, FaTrello} from 'react-icons/fa';
 import { IoInfiniteSharp} from 'react-icons/io5';
 import { TbDeviceHeartMonitorFilled, TbHeartRateMonitor, TbWorldWww } from 'react-icons/tb';
 import { BiSupport, BiLogoNetlify } from 'react-icons/bi';
+import { CgFigma } from "react-icons/cg";
 
 export const navLinks = [
   {
@@ -69,7 +73,7 @@ const services = [
     icon: networking,
   },
   {
-    title: "Monitoring",
+    title: "Monitoring & Automation",
     icon: monitoring,
   },
 ];
@@ -241,27 +245,27 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Samuel standards is always beating my imagination especially with innovation. How he combines his tech stack to solve problems is EPIC!",
+    name: "Kehinde Oniyide",
+    designation: "Project Manager IT Infrastructure",
+    company: "NNPC",
+    image: kenny,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Sam always provide high quality resolution. Not only do you take ownership of issues, you also strive to help others. A good leader and team player.",
+    name: "Gerry Keogh",
+    designation: "Support Manager",
+    company: "WIE",
+    image: avatar,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Sam was the first person I employed that was recommended by 2 different people for a single job. Samuel always deliver with industry standards.",
+    name: "Jeji Amasa",
+    designation: "Supervisor IT Infrastructure",
+    company: "NNPC",
+    image: amasa,
   },
 ];
 
@@ -378,8 +382,8 @@ const skills = [{
     tech: "Tailwind CSS",
     icon: SiTailwindcss,
   },  {
-    tech: "Styled Component",
-    icon: SiStyledcomponents,
+    tech: "Figma",
+    icon: CgFigma,
   },  {
     tech: "Framer Motion",
     icon: SiFramer,
@@ -426,7 +430,7 @@ const skills = [{
     tech: "Docker",
     icon: FaDocker,
   }, {
-    tech: "Git, GitHub, GitLab",
+    tech: "Git",
     icon: FaGitAlt,
   }, {
     tech: "K8",

@@ -40,6 +40,10 @@ import monitoring from "./monitoring.png"
 import fullstack from "./webdev.png";
 import westermo from "./westermo.jpeg"
 
+import amasa from './people/amasa.jpg';
+import kenny from './people/kenny.jpg'
+import avatar from './people/avatar.jpg'
+
 export {
   logo,
   fullstack,
@@ -79,4 +83,7 @@ export {
   monitoring, 
   networking,
   westermo,
+  amasa,
+  kenny,
+  avatar,
 };
