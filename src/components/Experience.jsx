@@ -8,6 +8,8 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 
 import { textVariant } from "../utils/motion";
+import { MdWorkOff  } from "react-icons/md";
+import { BsPersonWorkspace } from "react-icons/bs";
 
 // define the experience card
 const ExperienceCard = ({ experience }) => {
@@ -24,11 +26,13 @@ const ExperienceCard = ({ experience }) => {
       </div>
     }
    >
-    <div>
-      <h3 className="text-white text-[24px] font-bold ">
-        {experience.title}
+    <div className="w-full">
+      <h3 className="text-white text-[24px] font-bold w-full flex items-center jusity-between">
+      <span className="w-full">{experience.title}</span>
+        <span>{experience?.active ? <BsPersonWorkspace className="inline-flex mb-1 text-green-600 text-[19px]" /> : <MdWorkOff className="inline-flex mb-1 text-red-500 text-[19px]" />} </span>
       </h3>
-      <p className="text-secondary text-[16ox] font-semibold" style={{ margin: 0}}>{experience.company_name}</p>
+      <p className="text-secondary text-[16ox] font-semibold flex items-center justify-between" style={{ margin: 0}}>
+        <span>{experience.company_name}</span>  <span className="text-xs my-auto">{experience?.duration}</span></p>
     </div>
     <ul className="mt-5 list-disc ml-5 space-y-2">
       {experience.points.map((point, index) => (
@@ -44,6 +48,7 @@ const ExperienceCard = ({ experience }) => {
 
 
 const Experience = () => {
+  const reversed = [...experiences].reverse()
   return (
     <>
       <motion.div
@@ -55,7 +60,7 @@ const Experience = () => {
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
+          {reversed.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}
         </VerticalTimeline>

@@ -28,8 +28,9 @@ import tesla from "./company/tesla.png";
 import nnpc from "./company/nnpc.png";
 import futo from "./company/futo.png";
 import divinemercy from "./company/divinemercy.png";
-import virtualaccess from "./company/virtualaccess.jpg";
+import virtualaccess from "./company/westermo_logo.jpg";
 import motivalogic from "./company/motivalogic.png";
+import boonfuLogo from './company/boonfuLogo.png'
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -77,4 +78,5 @@ export {
   motivalogic,
   monitoring, 
   networking,
+  boonfuLogo
 };
