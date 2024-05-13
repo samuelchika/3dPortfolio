@@ -47,26 +47,28 @@ const ProjectCard = ({
         </div> */}
         <div className="mb-4 flex flex-wrap gap-6 justify-center">
           {tags.map((tag) => (
-            <p key={tag.name} classname={`text-[14px] font-bold block`}>
+            <p key={tag.name} className={`text-[14px] font-bold block`}>
               <span className={`${tag.color} `}>
                 {" "}
-                {tag?.icon && <tag.icon className="inline-block  border-white" />}
+                {tag?.icon && (
+                  <tag.icon className="inline-block  border-white" />
+                )}
               </span>
             </p>
           ))}
         </div>
         <div className="mt-5 text-justify">
-          <h3 className="text-white font-bold text-[24px] mb-2 text-center">{name}</h3>
+          <h3 className="text-white font-bold text-[24px] mb-2 text-center">
+            {name}
+          </h3>
           <p className="text-secondary text-[14px]">{description}</p>
         </div>
 
-        
-        <div className="w-full flex justify-center items-center mt-6 ">
+        {/* <div className="w-full flex justify-center items-center mt-6 ">
           <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center">
-            
             <span>View</span>
           </button>
-        </div>
+        </div> */}
       </Tilt>
     </motion.div>
   );
@@ -84,12 +86,9 @@ const Works = () => {
           varient={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-5xl text-justify leading-[30px] "
         >
-          Below are some of my project which might be viewed publicly. Most are
-          my project are live project. If you need more about any project or
-          want to know about me with regards to my projects. The contact form is
-          available below or you can visit my Github page above. Also, the
-          projects are mostly Web Application project. I will make available my
-          DevOps project soon for interested persons.
+          Below is a summary of few open projects I have done, with tools used to
+          leverage the project. DevOps projects are not included below but
+          Development only. Each card define the challenge, approach and history of the project.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">

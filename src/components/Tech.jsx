@@ -40,7 +40,7 @@ const Tech = () => {
         <div className="mt-10 w-full flex flex-wrap gap-10 ">
         
             { skills.map((skill, index) => (
-              <SkillsCard key={index} skill={skill} />
+              <SkillsCard key={index*3} skill={skill} />
             ))}
         </div>
       </div>

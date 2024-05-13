@@ -39,7 +39,13 @@ import devops from "./devops.png";
 import networking from "./networking.png"
 import monitoring from "./monitoring.png"
 import fullstack from "./webdev.png";
+import westermo from "./westermo.jpeg"
 
+import amasa from './people/amasa.jpg';
+import kenny from './people/kenny.jpg'
+import avatar from './people/avatar.jpg'
+
+import resume from './resume/Samuel.pdf'
 export {
   logo,
   fullstack,
@@ -78,5 +84,10 @@ export {
   motivalogic,
   monitoring, 
   networking,
-  boonfuLogo
+  boonfuLogo,
+  westermo,
+  amasa,
+  kenny,
+  avatar,
+  resume,
 };

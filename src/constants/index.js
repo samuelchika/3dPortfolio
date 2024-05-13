@@ -1,5 +1,5 @@
 import {
-  mobile,
+  logo,
   backend,
   creator,
   web,
@@ -18,28 +18,31 @@ import {
   meta,
   starbucks,
   motivalogic,
-  virtualaccess,
   carrent,
   jobit,
   tripguide,
   threejs,
   nnpc,
   futo,
-  logo,
   devops,
   monitoring,
   networking,
   fullstack,
-  boonfuLogo
+  westermo, 
+  kenny,
+  amasa,
+  avatar,
+  boonfuLogo,
 } from "../assets";
 
 import {
-  SiStyledcomponents, SiTailwindcss, SiReact, SiTypescript, SiPhp, SiNodedotjs, SiMysql, SiMongodb, SiRedis, SiFirebase, SiKubernetes, SiAnsible, SiTerraform, SiNewrelic, SiPowershell, SiDigitalocean, SiMicrosoftteams, SiGooglemeet, SiTeamviewer, SiAnydesk, SiSlack, SiMicrosoftonenote,SiNotion,SiWikipedia, SiReadthedocs, SiFramer, SiHeroku, SiNamecheap, SiPassport, SiBootstrap, SiJavascript, SiHtml5, SiCss3, SiExpress
+   SiTailwindcss, SiReact, SiTypescript, SiPhp, SiNodedotjs, SiMysql, SiMongodb, SiRedis, SiFirebase, SiKubernetes, SiAnsible, SiTerraform, SiNewrelic, SiPowershell, SiDigitalocean, SiMicrosoftteams, SiGooglemeet, SiTeamviewer, SiAnydesk, SiSlack, SiMicrosoftonenote,SiNotion,SiWikipedia, SiReadthedocs, SiFramer, SiHeroku, SiNamecheap, SiPassport, SiBootstrap, SiJavascript, SiHtml5, SiCss3, SiExpress, SiDocker
 } from 'react-icons/si';
-import { FaJava, FaDatabase, FaLaptopCode, FaCode, FaDocker, FaGitAlt, FaJenkins, FaFileCode, FaPython, FaCloud, FaAws, FaUsers, FaConfluence, FaBootstrap, FaNodeJs} from 'react-icons/fa';
+import { FaJava, FaDatabase, FaLaptopCode, FaCode, FaDocker, FaGitAlt, FaJenkins, FaFileCode, FaPython, FaCloud, FaAws, FaUsers, FaConfluence, FaBootstrap, FaNodeJs, FaJira, FaDiscord, FaTrello} from 'react-icons/fa';
 import { IoInfiniteSharp} from 'react-icons/io5';
 import { TbDeviceHeartMonitorFilled, TbHeartRateMonitor, TbWorldWww } from 'react-icons/tb';
 import { BiSupport, BiLogoNetlify } from 'react-icons/bi';
+import { CgFigma } from "react-icons/cg";
 import { formatDistanceToNow } from "date-fns";
 
 export const navLinks = [
@@ -133,7 +136,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Technical Support (INTERNSHIP)",
+    title: "IT Technical Support",
     company_name: "NNPC, Ikoyi, Lagos",
     icon: nnpc,
     active: false,
@@ -141,28 +144,53 @@ const experiences = [
     duration: "6 month",
     date: "Jun. 2014 - Dec. 2014",
     points: [
-      "Performed Anti-Virus Program Installation and Virus Removal for Customers",
-      "Installed Printers, Computer and Network Systems Provided application support by handling users queries with an 80% accuracy.",
-      "Daily maintenance, monitoring and support of the IT server and systems infrastructure", "Troubleshoot networking, routing and inter connectivity issues, including troubleshooting of network device configuration and low-level application interaction- TCP/IP, DNS, DHCP, Layer 2/3 network devices.", "Configure inter-vlan routing on Layer 3 Switches", "Assisted the network manager with Installation, Configuration and Administration of Windows Servers 2000/2003, Active Directory, FTP, DNS, DHCP, TFTP, under various LAN and WAN environments.", "Setting up companies mail on staff desktop / mobile and password reset.", "Worked with the I.T team members to resolve Local Server Issues", "Provided Network LAN Supports", "Remote Desktop Troubleshooting.",
-      "Obtain feedbacks and suggestions from staffs.",
-      "Establishing timeline / report for escallating issues."
+      "Support end users - Office 360, user account configuration (Active Directory), Hardware and Software. Design, Installation, Troubleshooting and maintainance of PC / Networks.",
+      "Working with service providers.",
+      "Windows and Office 365 setup and administration",
+      "Hardware / Software  - (Desktop / Mobile) support.", "Investigated and diagnosed network problems", "Manage and update IT inventory", "User account configuration: permissions and password management", "Installed, maintained, repaired and upgrade Company’s Computer System, network printers and Networks that really made information sharing easy.", "Configuring and supporting all networked devices", "Performed Upgrading and backups of Cisco router Configuration files using TFTP server.",
+      "Maintain professionalism and courtesy, answering phone calls.",
+      "Configured VLANs, VTP, Ether channels for proper optimization of the network.", "A positive “can do” attitude towards work, and our clients",
+      "Documentation / report escalating issues to higher Tier - handwritten / mail.", "Ensured all IT equipment complies with industry standards.",
+      "Develop and manage IT enlightment training resource for staffs.",
+      "Provided Local Area Network (LAN) Supports.",
     ],
   },
   {
-    title: "IT Consultant",
-    company_name: "FUTO, (Mathematics Department)",
-    icon: futo,    
+  title: "IT Consultant",
+  company_name: "FUTO, (Mathematics Department)",
+  icon: futo,    
+  active: false,
+  iconBg: "#383E56",
+  duration: "11 month",
+  date: "Jan. 2015 - Nov. 2015",
+  points: [
+    "Worked closely with department to analyse IT system requirements, IT needs and their budget to plan IT projects and ensure customers satisfaction.",
+    "Developed IT system specifications after evaluating departments expectation to complier with industry standards.",
+    "Solved clients IT issues - Researched and purchased equipment / quality software, documented plan for software, hardware and networking installation and maintenance.",
+    "Decommission of bad computers/networks.",
+    "Installed and updated Windows 10, Microsoft Office Suite, Matlab, Norton 360.",
+    "Installed network technology: Wireless Access point, DHCP, TCP/IP, Access Control (Security).",
+    "Mentored the first IT officer in mathematics department.",
+  ],
+},
+  {
+    title: "Technical Support (INTERNSHIP)",
+    company_name: "NNPC, Ikoyi, Lagos",
+    icon: nnpc,
     active: false,
-    iconBg: "#383E56",
-    duration: "11 month",
-    date: "Jan. 2015 - Nov. 2015",
+    iconBg: "#E6DEDD",
+    duration: "8 month",
+    date: "Feb. 2014 - Sept. 2019",
     points: [
-      "Worked closely with department to analyze IT system requirements, information technology needs and their budget in order to plan IT project and ensure customers satisfaction.",
-      "Developed IT system specifications after evaluating departments expectation to comply with industry standards",
-      "Solved clients IT issues - Researched and purchased equipment / quality software, documented plan for software, hardware and networking installation and maintainance.",
-      "Decommission of bad computers/networks.",
-      "Installed and updated Windows 10, MS Suite, Matlab, Norton 360.",
-      "Installed network technology: Wireless Access point, DHCP, TCP/IP, Access Control(Security).",
+      "Plan, document, configure, troubleshoot, monitor, and support all network device(s) installation for new / old site(s).",
+      "Managing and updating IT inventory.",
+      "User account configuration: permissions and password management",
+      "Hardware / Software / Network support ensured all IT equipment complies with industry standards.",
+      "Configured VLANs, VTP, Ether-channels, DHCP etc, for proper optimization of the network.",
+      "Attending to customer query via Ticketing system and documenting / report escalating issues to higher Tier - handwritten / mail.",
+      "Maintain professionalism and courtesy, answering phone calls.",
+      "Performed Upgrading and backups of Cisco router configuration files using TFTP server.",
+      "Working with service providers.",
     ],
   },
   {
@@ -188,27 +216,7 @@ const experiences = [
 "Implemented automated testing using Mocha to ensure code quality and reliability.",
 "Plan, develop, troubleshoot, support, monitor and test software.",
 "Collaborate with UI/UX designers using Figma.",
-"Deployed applications to production environments using Docker, AWS, or Heroku, ensuring seamless deployment and scalability.",
-    ],
-  },
-  {
-    title: "IT Technical Support",
-    company_name: "NNPC, Ikoyi, Lagos",
-    icon: nnpc,
-    active: false,
-    iconBg: "#E6DEDD",
-    duration: "8 month",
-    date: "Feb. 2014 - Sept. 2019",
-    points: [
-      "Support end users - Office 360, user account configuration (Active Directory), Hardware and Software. Design, Installation, Troubleshooting and maintainance of PC / Networks.",
-      "Working with service providers.",
-      "Windows and Office 365 setup and administration",
-      "Hardware / Software  - (Desktop / Mobile) support.", "Investigated and diagnosed network problems", "Manage and update IT inventory", "User account configuration: permissions and password management", "Installed, maintained, repaired and upgrade Company’s Computer System, network printers and Networks that really made information sharing easy.", "Configuring and supporting all networked devices", "Performed Upgrading and backups of Cisco router Configuration files using TFTP server.",
-      "Maintain professionalism and courtesy, answering phone calls.",
-      "Configured VLANs, VTP, Ether channels for proper optimization of the network.", "A positive “can do” attitude towards work, and our clients",
-      "Documentation / report escalating issues to higher Tier - handwritten / mail.", "Ensured all IT equipment complies with industry standards.",
-      "Develop and manage IT enlightment training resource for staffs.",
-      "Provided Local Area Network (LAN) Supports.",
+"Automate / Deployed applications to production environments using Jenkins, Docker, AWS, or Heroku, ensuring seamless deployment and scalability.",
     ],
   }, {
     title: "Lead DevOps Engineer",
@@ -262,7 +270,7 @@ const experiences = [
   {
     title: "Network Operations Engineer",
     company_name: "Westermo Ireland",
-    icon: virtualaccess,
+    icon: westermo,
     active: true,
     iconBg: "#fff",
     duration: formatDistanceToNow(new Date(2021, 5, 21)),
@@ -291,41 +299,42 @@ const experiences = [
 "Provided technical guidance and mentorship to junior team members, fostering skill development and knowledge sharing.",
 "Creating and modifying in-house documentations for processes and device manuals, accommodating changes due to updates."
     ],
-  },
+  }, 
 ];
 
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+
+      "Samuel standards is always beating my imagination especially with innovation. How he combines his tech stack to solve problems is EPIC!",
+    name: "Kehinde Oniyide",
+    designation: "Project Manager IT Infrastructure",
+    company: "NNPC",
+    image: kenny,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Sam always provide high quality resolution. Not only do you take ownership of issues, you also strive to help others. A good leader and team player.",
+    name: "Gerry Keogh",
+    designation: "Support Manager",
+    company: "WIE",
+    image: avatar,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Sam was the first person I employed that was recommended by 2 different people for a single job. Samuel always deliver with industry standards.",
+    name: "Jeji Amasa",
+    designation: "Supervisor IT Infrastructure",
+    company: "NNPC",
+    image: amasa,
   },
 ];
 
 const projects = [
   {
-    name: "VA Ticket Tracker",
+    name: "WIE Ticket Tracker",
     description:
-      "A personal web app developed, leveraging the power of Mongo ATLAS, Node JS (Express), BootStrap. This software was inspired by my day-to-challenge of keeping track of my tickets. The functionality enables me to briefly summarize tickets email chain, the type of ticket and who I assigns the ticket to when I go on leave. Assigned colleague can update the ticket with their login credentials even in my absence, and the software list each summary with the author. ",
+      "Managing and remembering alot of customer request and long chain discussion can be wearisome especially when customer comes back after months of abandoned discussion. This web app was developed, leveraging the power of Mongo ATLAS, Node JS (Express), BootStrap. Not only does it help me keep track of tickets and discussion, I can assign the discussion to a colleague when I am on leave for brief summaries. Ticket can also be claimed back",
     tags: [
       {
         name: "NodeJS",
@@ -359,33 +368,37 @@ const projects = [
     source_code_link: "https://github.com/samuelchika/VATicket",
   },
   {
-    name: "Beholding His Face",
+    name: "RCCG Excel Parish",
     description:
-      "This project was inspired by my love for studying my bible. Moving books around will not be nice especially trying to reference previous study. Some of its features include but not limited to creating topics, sub topics under main topic, then posts under the sub topics. The post can be classified into 7 catagories which can be seen when you view a post on the LHS. I added an extra functionality for users to comment on post. It is hosted in Namecheap.",
+      "A two weeks project to revamp the church website to accomodate the church new feature. Site was originally developed with No-Code technology. I am a member of the media team and collaborated with Joel who provided the approved Figma UI/UX design. The project was powered with MERN stack - React Typescript and shadcn/ui for frontend. Project was built and hosted in Namecheap. Allow blog activity, authentication and defined features.",
     tags: [
       {
         name: "HTML5",
-        color: "text-orange-600",
-        icon: SiHtml5
-      },{
-        name: "CSS",
         color: "text-blue-600",
-        icon: SiCss3
+        icon: SiReact
       },
       {
-        name: "PHP",
-        color: "text-purple-600",
-        icon: SiPhp,
-      },
-      {
-        name: "Bootstrap",
+        name: "Tailwind CSS",
         color: "text-[#915eff]",
-        icon: SiBootstrap,
+        icon: SiTailwindcss,
       },
       {
-        name: "JavaScript",
-        color: "text-sky-600",
-        icon: SiJavascript
+        name: "TypeScript",
+        color: "text-blue-600",
+        icon: SiTypescript
+      },{
+        name: "NodeJS",
+        color: "text-green-600",
+        icon: FaNodeJs,
+      },{
+        name: "Express (EJS)",
+        color: "text-blue-600",
+        icon: SiExpress,
+      },
+      {
+        name: "Mongodb",
+        color: "text-green-600",
+        icon: SiMongodb,
       },{
         name: "Namecheap",
         color: "text-orange-600",
@@ -396,21 +409,27 @@ const projects = [
     source_code_link: "https://www.beholdinghisface.com/pages/index",
   },
   {
-    name: "Trip Guide",
+    name: "Barcode Generator",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A challenge arose in the workplace that cut across teams. Devices brought in as RMA in batches are to be returned in batches. For device to be returned, the RMA number should be inputted into the in-house software manually. To hasten the process is to scan the numbers in, using a barcode reader. I developed a software to read a CSV file, process it, and generate barcode for each data captured in the CSV file. This improved logistic process by 80% ",
     tags: [
       {
-        name: "nextjs",
-        color: "text-gray-200",
-      },
-      {
-        name: "supabase",
-        color: "text-red-600",
-      },
-      {
-        name: "css",
+        name: "React",
+        color: "text-purple-600",
+        icon: SiReact
+      },{
+        name: "Tailwind",
         color: "text-blue-600",
+        icon: SiTailwindcss
+      },
+      {
+        name: "JavaScript",
+        color: "text-orange-600",
+        icon: SiJavascript
+      },{
+        name: "Docker",
+        color: "text-blue-600",
+        icon: SiDocker
       },
     ],
     image: tripguide,
@@ -428,8 +447,8 @@ const skills = [{
     tech: "Tailwind CSS",
     icon: SiTailwindcss,
   },  {
-    tech: "Styled Component",
-    icon: SiStyledcomponents,
+    tech: "Figma",
+    icon: CgFigma,
   },  {
     tech: "Framer Motion",
     icon: SiFramer,
@@ -440,6 +459,19 @@ const skills = [{
     tech: "TypeScript",
     icon: SiTypescript,
   },]
+},  {
+  title: "BackEnd",
+  icon: FaCode,
+  details: [{
+    tech: "PHP",
+    icon: SiPhp,
+  }, {
+    tech: "NodeJS (Express)",
+    icon: SiNodedotjs,
+  }, {
+    tech: "Java",
+    icon: FaJava,
+  }]
 }, {
   title: "Database",
   icon: FaDatabase,
@@ -457,32 +489,6 @@ const skills = [{
     icon: SiFirebase
   }]
 }, {
-  title: "BackEnd",
-  icon: FaCode,
-  details: [{
-    tech: "PHP",
-    icon: SiPhp,
-  }, {
-    tech: "NodeJS (Express)",
-    icon: SiNodedotjs,
-  }, {
-    tech: "Java",
-    icon: FaJava,
-  }]
-}, {
-  title: "Hosting Service",
-  icon: TbWorldWww,
-  details: [{
-    tech: "Netlify",
-    icon: BiLogoNetlify,
-  }, {
-    tech: "Heroku",
-    icon: SiHeroku,
-  }, {
-    tech: "Namecheap",
-    icon: SiNamecheap,
-  }] 
-},{
   title: "DevOps",
   icon: IoInfiniteSharp,
   details: [{
@@ -503,6 +509,25 @@ const skills = [{
   }, {
     tech: "Terraform",
     icon: SiTerraform
+  }]
+}, {
+  title: "Team Collaboration",
+  icon: FaUsers,
+  details: [{
+    tech: "MS Teams",
+    icon: SiMicrosoftteams,
+  }, {
+    tech: "Slack",
+    icon: SiSlack,
+  }, {
+    tech: "Jira",
+    icon: FaJira,
+  }, {
+    tech: "Discord",
+    icon: FaDiscord,
+  }, , {
+    tech: "Trello",
+    icon: FaTrello,
   }]
 }, {
   title: "Documentation",
@@ -537,6 +562,19 @@ const skills = [{
     icon: SiAnydesk,
   }]
 }, {
+  title: "Hosting Service",
+  icon: TbWorldWww,
+  details: [{
+    tech: "Netlify",
+    icon: BiLogoNetlify,
+  }, {
+    tech: "Heroku",
+    icon: SiHeroku,
+  }, {
+    tech: "Namecheap",
+    icon: SiNamecheap,
+  }] 
+},{
   title: "Monitoring",
   icon: TbHeartRateMonitor,
   details: [{
@@ -557,16 +595,6 @@ const skills = [{
     icon: SiDigitalocean,
   }]
 },  {
-  title: "Team Collaboration",
-  icon: FaUsers,
-  details: [{
-    tech: "MS Teams",
-    icon: SiMicrosoftteams,
-  }, {
-    tech: "Slack",
-    icon: SiSlack,
-  }]
-}, {
   title: "Scripting",
   icon: SiPowershell,
   details: [{
