@@ -7,6 +7,8 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+import toast from "react-hot-toast";
+
 // service id: service_o2qb4gv
 // template id: template_6zly6i8
 // public key: S0AiCJBfzi0ahWR9L
@@ -23,36 +25,70 @@ const Contact = () => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
-
+  console.log(localStorage.getItem("xcer55sd2"));
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .send(
-        "service_o2qb4gv",
-        "template_6zly6i8",
+    if (localStorage.getItem("xcer55sd2") !== null) {
+      toast(
+        `Hi ${localStorage.getItem(
+          "xcer55sd2"
+        )}, \n\nSamuel will be in touch with you in less than 48 hours depending on his schedules, you can reach him via his phone on his CV. \n\nNo need to send out another email 😊.`,
         {
-          from_name: form.name,
-          to_name: "Adrain",
-          from_email: form.email,
-          message: form.message,
-          to_email: "samuelemyrs@gmail.com",
-        },
-        "S0AiCJBfzi0ahWR9L"
-      )
-      .then(() => {
-        setLoading(false);
-        alert("Thank you. I will get back to you ASAP");
-        setForm({
-          name: "",
-          email: "",
-          message: "",
+          icon: "⚠️",
+          style: {
+            borderRadius: "10px",
+            background: "#2f80ed",
+            color: "#fff",
+          },
+        }
+      );
+    } else {
+      emailjs
+        .send(
+          "service_o2qb4gv",
+          "template_6zly6i8",
+          {
+            from_name: form.name,
+            to_name: "Samuel",
+            from_email: form.email,
+            message: form.message,
+            to_email: "samuelemyrs@gmail.com",
+          },
+          "S0AiCJBfzi0ahWR9L"
+        )
+        .then(() => {
+          setLoading(false);
+          toast.success(
+            "I just received your email. I will respond ASAP, but not more than 48 hours - IF AM NOT ON LEAVE.",
+            {
+              icon: "✅",
+              style: {
+                borderRadius: "10px",
+                background: "#2f80ed",
+                color: "#fff",
+              },
+            }
+          );
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+          localStorage.setItem("xcer55sd2", form.name);
+          setTimeout(() => {
+            localStorage.clear();
+          }, 180000);
+        })
+        .catch((err) => {
+          setLoading(false);
+          toast.error("Ops! Something went wrong.", {
+            icon: "❌",
+          });
+        })
+        .finally(() => {
+          setLoading(false);
         });
-      })
-      .catch((err) => {
-        setLoading(false);
-        console.log(err);
-        alert("Something Went wrong.");
-      });
+    }
   };
 
   return (

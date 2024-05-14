@@ -1,5 +1,17 @@
 import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components';
+import {
+  About,
+  Contact,
+  Experience,
+  Feedbacks,
+  Hero,
+  Navbar,
+  Tech,
+  Works,
+  StarsCanvas,
+} from "./components";
+
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
@@ -19,8 +31,15 @@ const App = () => {
           {/* <StarsCanvas /> */}
         </div>
       </div>
+      <Toaster
+        toastOptions={{
+          // Define default options
+          className: "",
+          duration: 12000,
+        }}
+      />
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default App
+export default App;
